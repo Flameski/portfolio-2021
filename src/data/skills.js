@@ -13,7 +13,19 @@ export const skills = [
   },
   {
     id: 2,
-    name: 'HTML',
+    name: 'JavaScript',
+    description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
+    icon: '',
+  },
+  {
+    id: 3,
+    name: 'Bootstrap',
+    description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
+    icon: '',
+  },
+  {
+    id: 4,
+    name: 'SCSS',
     description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
     icon: '',
   },
