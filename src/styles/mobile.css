@@ -2,12 +2,32 @@
   main {
     padding: 0 2rem;
   }
-
   .skills {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-
   .tidbits {
     grid-template-columns: repeat(2, 1fr);
   }
+  .timeline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .timeline-element .solid {
+    border-left: 3px solid purple;
+    border-top: none;
+    min-height: 50px;
+    position: absolute;
+    top: 0;
+  }
+  .timeline-element .dashed {
+    border-left: 3px dashed purple;
+    border-top: none;
+    min-height: 50px;
+    position: absolute;
+    top: 0;
+  }
 }
+/*# sourceMappingURL=mobile.css.map */

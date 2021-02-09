@@ -9,8 +9,8 @@ main {
 .skills {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -23,12 +23,12 @@ main {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 6;
-  grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   gap: 20px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tidbit {
@@ -43,15 +43,15 @@ main {
   border-radius: 10px;
   position: relative;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tidbit img {
   display: block;
   margin: 10px auto;
-  width: 85%;
-  height: 85%;
+  width: 70%;
+  height: 70%;
 }
 
 .tidbit p {
@@ -59,8 +59,9 @@ main {
   bottom: -10px;
   color: white;
   font-weight: bold;
-  font-size: 1.25rem;
-  -webkit-text-stroke: 1px black;
+  font-size: 0.8rem;
+  text-shadow: 0px 0px 5px black;
+  padding: 0 1rem;
   line-height: 16px;
 }
 
@@ -75,5 +76,54 @@ main {
   left: 0;
   width: 100%;
   background-color: burlywood;
+  z-index: 99;
+}
+
+.timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.timeline-element {
+  display: inline-block;
+  background-color: pink;
+  height: 30px;
+  position: relative;
+  padding-top: 25px;
+  width: 100%;
+}
+
+.timeline-element .solid {
+  border-top: 3px solid purple;
+}
+
+.timeline-element .dashed {
+  border-top: 3px dashed purple;
+}
+
+.timeline-element .angle {
+  border-left: 3px solid purple;
+  height: 20px;
+  width: 50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: relative;
+  bottom: -21px;
+}
+
+.timeline-element .under {
+  border-top: 3px solid purple;
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.timeline-element .subject {
+  position: absolute;
+  top: 8px;
+  left: 25px;
 }
 /*# sourceMappingURL=layout.css.map */

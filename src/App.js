@@ -12,7 +12,7 @@ const App = () => {
       <h1>Hello from home!</h1>
       <Skills />
       <AboutMe />
-      <div style={{ height: '1000px' }}></div>
+      {/* <div style={{ height: '1000px' }}></div> */}
       <FuturePlans />
     </Layout>
   );

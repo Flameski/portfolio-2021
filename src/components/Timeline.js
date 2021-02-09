@@ -4,13 +4,11 @@ import { learning } from '../data/learning';
 
 const Timeline = () => {
   return (
-    <>
+    <div className="timeline">
       {learning.map(item => {
-        return (
-          <TimelineElement key={item.id} item={item} len={learning.length} />
-        );
+        return <TimelineElement key={item.id} item={item} />;
       })}
-    </>
+    </div>
   );
 };
 

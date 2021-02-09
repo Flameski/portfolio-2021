@@ -19,13 +19,37 @@ export const skills = [
   },
   {
     id: 3,
-    name: 'Bootstrap',
+    name: 'React',
     description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
     icon: '',
   },
   {
     id: 4,
+    name: 'Bootstrap',
+    description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
+    icon: '',
+  },
+  {
+    id: 5,
     name: 'SCSS',
+    description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
+    icon: '',
+  },
+  {
+    id: 6,
+    name: 'Photoshop',
+    description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
+    icon: '',
+  },
+  {
+    id: 7,
+    name: 'LUA',
+    description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
+    icon: '',
+  },
+  {
+    id: 8,
+    name: 'Sony Vegas',
     description: 'oisdjf sdmfsmd f;lsmd asdf sf sdfs dfsdf ',
     icon: '',
   },
