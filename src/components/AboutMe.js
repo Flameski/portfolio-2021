@@ -22,12 +22,12 @@ const AboutMe = () => {
         }
       }
     });
-    observer.observe(document.querySelector('.tidbits'));
+    observer.observe(document.querySelector('.tidbits-header'));
   });
 
   return (
     <div>
-      <h3>Here's some things about me:</h3>
+      <h3 className="tidbits-header">Here's some things about me:</h3>
       <div className="tidbits">
         {personal.map(item => {
           return (

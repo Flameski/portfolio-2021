@@ -4,6 +4,7 @@ import Layout from './components/layout';
 // components
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
+import FuturePlans from './components/FuturePlans';
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
       <h1>Hello from home!</h1>
       <Skills />
       <AboutMe />
+      <div style={{ height: '1000px' }}></div>
+      <FuturePlans />
     </Layout>
   );
 };

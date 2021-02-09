@@ -63,3 +63,39 @@ main {
   width: 100%;
   background-color: burlywood;
 }
+
+.timeline-element {
+  display: inline-block;
+  background-color: pink;
+  height: 30px;
+  position: relative;
+  padding-top: 25px;
+  .solid {
+    border-top: 3px solid purple;
+  }
+
+  .dashed {
+    border-top: 3px dashed purple;
+  }
+  .angle {
+    border-left: 3px solid purple;
+    height: 20px;
+    width: 50px;
+    transform: rotate(45deg);
+    position: relative;
+    bottom: -21px;
+  }
+  .under {
+    border-top: 3px solid purple;
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+  }
+  .subject {
+    position: absolute;
+    top: 8px;
+    left: 25px;
+  }
+}
