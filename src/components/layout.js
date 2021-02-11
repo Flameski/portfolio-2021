@@ -4,14 +4,14 @@ import Footer from './Footer';
 import '../styles/layout.scss';
 import '../styles/mobile.scss';
 
-const layout = ({ children }) => {
+const Layout = ({ children, changeLang, isBg }) => {
   return (
     <>
-      <Header />
+      <Header changeLang={changeLang} isBg={isBg} />
       <main>{children}</main>
       <Footer />
     </>
   );
 };
 
-export default layout;
+export default Layout;

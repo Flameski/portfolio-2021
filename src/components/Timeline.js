@@ -4,7 +4,7 @@ import { learning } from '../data/learning';
 
 const Timeline = () => {
   return (
-    <div className="timeline">
+    <div className="timeline" id="training">
       {learning.map(item => {
         return <TimelineElement key={item.id} item={item} />;
       })}

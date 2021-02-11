@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { personal } from '../data/personal';
 import Tidbit from './Tidbit';
 
-const AboutMe = () => {
+const AboutMe = ({ isBg }) => {
   const [descr, setDescr] = useState('');
   const showTidbitDescription = id => {
-    setDescr(personal[id].description);
+    setDescr(isBg ? personal[id].description : personal[id].descriptionEn);
   };
 
   useEffect(() => {
@@ -27,7 +27,9 @@ const AboutMe = () => {
 
   return (
     <div>
-      <h3 className="tidbits-header">Here's some things about me:</h3>
+      <h2 className="tidbits-header">
+        {isBg ? 'Някои неща за мен' : "Here's some things about me:"}
+      </h2>
       <div className="tidbits">
         {personal.map(item => {
           return (
