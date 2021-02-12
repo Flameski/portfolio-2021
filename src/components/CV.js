@@ -3,15 +3,15 @@ import React from 'react';
 const CV = ({ isBg }) => {
   if (isBg) {
     return (
-      <>
-        <h2 id="cv">Моят професионален опит</h2>
-      </>
+      <div className="experience" id="cv">
+        <h2>Моят професионален опит</h2>
+      </div>
     );
   } else {
     return (
-      <>
-        <h2 id="cv">My professional experience</h2>
-      </>
+      <div className="experience" id="cv">
+        <h2>My professional experience</h2>
+      </div>
     );
   }
 };

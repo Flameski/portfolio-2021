@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import CV from './components/CV';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import FuturePlans from './components/FuturePlans';
 
@@ -18,6 +19,7 @@ const App = () => {
       <Home isBg={isBg} />
       <CV isBg={isBg} />
       <Skills isBg={isBg} />
+      <Projects isBg={isBg} />
       <AboutMe isBg={isBg} />
       {/* <div style={{ height: '1000px' }}></div> */}
       <FuturePlans isBg={isBg} />

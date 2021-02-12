@@ -4,7 +4,6 @@ const Tidbit = ({ id, title, img, bgstyle, showTidbitDescription }) => {
   return (
     <div
       className="tidbit"
-      id="aboutme"
       style={{ backgroundImage: bgstyle }}
       onMouseOver={() => showTidbitDescription(id)}
       onMouseDown={() => showTidbitDescription(id)}

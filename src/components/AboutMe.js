@@ -27,7 +27,7 @@ const AboutMe = ({ isBg }) => {
 
   return (
     <div>
-      <h2 className="tidbits-header">
+      <h2 className="tidbits-header" id="aboutme">
         {isBg ? 'Някои неща за мен' : "Here's some things about me:"}
       </h2>
       <div className="tidbits">

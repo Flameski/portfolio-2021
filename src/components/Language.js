@@ -1,9 +1,11 @@
 import React from 'react';
+import en from '../img/en.png';
+import bg from '../img/bg.png';
 
 const Language = ({ changeLang, isBg }) => {
   return (
     <div className="lang" onMouseDown={() => changeLang()}>
-      {isBg ? 'EN' : 'BG'}
+      <img src={isBg ? en : bg} alt="flag" />
     </div>
   );
 };

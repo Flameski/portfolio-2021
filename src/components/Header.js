@@ -1,26 +1,63 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Language from './Language';
+import BurgerMenu from './BurgerMenu';
 import { HashLink } from 'react-router-hash-link';
 
 const Header = ({ changeLang, isBg }) => {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpened, setMobileOpened] = useState(false);
+  const moveMenu = () => {
+    if (window.innerWidth > 500) {
+      if (window.pageYOffset >= 600) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+  };
+  useEffect(() => {
+    document.addEventListener('scroll', moveMenu);
+    return () => {
+      document.removeEventListener('scroll', moveMenu);
+    };
+  });
+  const openMenu = () => {
+    setMobileOpened(!mobileOpened);
+  };
   return (
-    <div className="main-nav">
-      <nav>
-        <HashLink smooth to="/#top">
-          Home
-        </HashLink>
-        <HashLink smooth to="/#skills">
-          Skills
-        </HashLink>
-        <HashLink smooth to="/#aboutme">
-          About Me
-        </HashLink>
-        <HashLink smooth to="/#training">
-          Training
-        </HashLink>
-      </nav>
-      <Language changeLang={changeLang} isBg={isBg} />
-    </div>
+    <>
+      <BurgerMenu openMenu={openMenu} mobileOpened={mobileOpened} />
+      <div
+        className={`main-nav ${scrolled ? 'scrolled' : 'start'} ${
+          mobileOpened ? 'open' : ''
+        }`}
+      >
+        <nav>
+          <HashLink smooth to="/#top" onClick={() => openMenu()}>
+            {isBg ? 'Начало' : 'Home'}
+          </HashLink>
+          <HashLink smooth to="/#cv" onClick={() => openMenu()}>
+            {isBg ? 'Опит' : 'Experience'}
+          </HashLink>
+          <HashLink smooth to="/#skills" onClick={() => openMenu()}>
+            {isBg ? 'Умения' : 'Skills'}
+          </HashLink>
+          <HashLink smooth to="/#projects" onClick={() => openMenu()}>
+            {isBg ? 'Проекти' : 'Projects'}
+          </HashLink>
+          <HashLink smooth to="/#aboutme" onClick={() => openMenu()}>
+            {isBg ? 'За мен' : 'About Me'}
+          </HashLink>
+          <HashLink smooth to="/#training" onClick={() => openMenu()}>
+            {isBg ? 'Бъдещи обучения' : 'Training'}
+          </HashLink>
+          <HashLink smooth to="/#contact" onClick={() => openMenu()}>
+            {isBg ? 'Контакти' : 'Conatcts'}
+          </HashLink>
+        </nav>
+        <Language changeLang={changeLang} isBg={isBg} />
+      </div>
+    </>
   );
 };
 

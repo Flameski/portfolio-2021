@@ -4,7 +4,7 @@ export const personal = [
     title: 'Alt-tech wannabe',
     img: require('../img/duck.png'),
     description:
-      'Аз не го "гугълвам", аз го "дъквам". Да живее браузъра Brave. По ирония на съдбата не разбирам от Linux (все оше).',
+      'Аз не го "гугълвам", аз го "дъквам". Да живее браузъра Brave. По ирония на съдбата не разбирам от Linux (все още).',
     descriptionEn:
       'I don\'t "google" it, I "duck" it. Brave browser all the way. Ironically enough I don\'t do Linux (yet).',
     bgstyle: 'linear-gradient(300deg, #ffc97d, #ff8a00)',
