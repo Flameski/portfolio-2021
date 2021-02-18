@@ -1,9 +1,9 @@
 @media screen and (max-width: 500px) {
-  main {
-    padding: 0 2rem;
-  }
+  // main {
+  //   padding: 0 2rem;
+  // }
 
-  .skills {
+  .skills-list {
     grid-template-columns: 1fr;
   }
 
@@ -13,6 +13,7 @@
   }
   .timeline {
     flex-direction: column;
+    margin-left: 10vw;
   }
 
   @mixin timeline-element-left {
@@ -25,19 +26,36 @@
   .timeline-element {
     height: 25px;
     .solid {
-      border-left: 3px solid purple;
+      border-left: 3px solid azure;
       @include timeline-element-left;
     }
     .dashed {
-      border-left: 3px dashed purple;
+      border-left: 3px dashed azure;
       @include timeline-element-left;
     }
   }
 
   .home {
-    margin: 15vh 0 0 0;
+    padding: 15vh 2vh;
   }
 
+  .experience,
+  .skills,
+  .projects,
+  .trainings,
+  .about {
+    padding: 5vh 2vh;
+  }
+  .single-project {
+    grid-template-columns: 1fr;
+    .mobile {
+      max-width: 30%;
+      left: 60%;
+    }
+    .project-description {
+      padding: 0 2vh;
+    }
+  }
   .main-nav {
     flex-direction: column;
     height: auto;

@@ -29,21 +29,21 @@ export const skills = [
   },
   {
     id: 4,
-    name: 'Bootstrap',
+    name: 'jQuery',
     description: 'Описание на български.',
     descriptionEn: 'Description in English.',
     icon: '',
   },
   {
     id: 5,
-    name: 'SCSS',
+    name: 'Bootstrap',
     description: 'Описание на български.',
     descriptionEn: 'Description in English.',
     icon: '',
   },
   {
     id: 6,
-    name: 'Photoshop',
+    name: 'SCSS',
     description: 'Описание на български.',
     descriptionEn: 'Description in English.',
     icon: '',
@@ -51,13 +51,6 @@ export const skills = [
   {
     id: 7,
     name: 'LUA',
-    description: 'Описание на български.',
-    descriptionEn: 'Description in English.',
-    icon: '',
-  },
-  {
-    id: 8,
-    name: 'Sony Vegas',
     description: 'Описание на български.',
     descriptionEn: 'Description in English.',
     icon: '',

@@ -26,8 +26,8 @@ const AboutMe = ({ isBg }) => {
   });
 
   return (
-    <div>
-      <h2 className="tidbits-header" id="aboutme">
+    <section className="about" id="aboutme">
+      <h2 className="tidbits-header">
         {isBg ? 'Някои неща за мен' : "Here's some things about me:"}
       </h2>
       <div className="tidbits">
@@ -44,7 +44,7 @@ const AboutMe = ({ isBg }) => {
       <div className="tidbit-description">
         <p>{descr}</p>
       </div>
-    </div>
+    </section>
   );
 };
 
