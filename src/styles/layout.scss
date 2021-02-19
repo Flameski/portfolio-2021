@@ -9,6 +9,8 @@ $green: #00ffb4;
   padding-bottom: 5vh;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
+
 // body {
 //   // background-image: linear-gradient(300deg, #00ffb4, #00d2ff);
 //   // background-image: linear-gradient(300deg, #00d2ff, #007eff);
@@ -34,6 +36,11 @@ main {
     display: flex;
     justify-content: space-between;
     font-size: 1.4rem;
+    align-items: baseline;
+  }
+  a {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
   }
   .lang {
     margin: auto;
@@ -50,7 +57,10 @@ main {
 }
 .scrolled {
   position: fixed;
-  top: 1vh;
+  top: 0;
+  padding: 1vh 200vh;
+  background-color: azure;
+  border-bottom: 1px solid darkgray;
 }
 
 .home {
@@ -64,6 +74,8 @@ main {
     margin: 5vh auto;
     display: block;
     max-width: 900px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
   }
 }
 
@@ -161,7 +173,7 @@ main {
       margin: 0;
       font-size: 1.4rem;
     }
-    .tag {
+    .project-description__tag {
       background-color: azure;
       border: 1px solid darkgray;
       color: $darkblue;
@@ -171,6 +183,18 @@ main {
       padding: 2px;
       margin: 5px 5px 5px 0;
       text-align: center;
+    }
+    .project-description__link {
+      display: flex;
+      align-items: flex-end;
+      img {
+        height: 1rem;
+        margin: 5px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.4rem;
+      }
     }
   }
 }

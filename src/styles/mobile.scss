@@ -52,10 +52,15 @@
       max-width: 30%;
       left: 60%;
     }
+    .single-project__img {
+      min-height: 220px;
+    }
     .project-description {
-      padding: 0 2vh;
+      padding: 2vh 2vh;
+      margin-top: 25px;
     }
   }
+
   .main-nav {
     flex-direction: column;
     height: auto;
@@ -68,6 +73,9 @@
       padding-left: 6rem;
       padding-bottom: 1rem;
       line-height: 2.5rem;
+      .main-nav__pipe {
+        display: none;
+      }
     }
     .lang {
       margin: 0;

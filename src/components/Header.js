@@ -36,21 +36,27 @@ const Header = ({ changeLang, isBg }) => {
           <HashLink smooth to="/#top" onClick={() => openMenu()}>
             {isBg ? 'Начало' : 'Home'}
           </HashLink>
+          <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#cv" onClick={() => openMenu()}>
             {isBg ? 'Опит' : 'Experience'}
           </HashLink>
+          <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#skills" onClick={() => openMenu()}>
             {isBg ? 'Умения' : 'Skills'}
           </HashLink>
+          <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#projects" onClick={() => openMenu()}>
             {isBg ? 'Проекти' : 'Projects'}
           </HashLink>
+          <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#aboutme" onClick={() => openMenu()}>
             {isBg ? 'За мен' : 'About Me'}
           </HashLink>
-          <HashLink smooth to="/#training" onClick={() => openMenu()}>
+          <span className="main-nav__pipe">|</span>
+          <HashLink smooth to="/#trainings" onClick={() => openMenu()}>
             {isBg ? 'Бъдещи обучения' : 'Training'}
           </HashLink>
+          <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#contact" onClick={() => openMenu()}>
             {isBg ? 'Контакти' : 'Conatcts'}
           </HashLink>
