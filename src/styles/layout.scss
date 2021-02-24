@@ -64,7 +64,7 @@ main {
 }
 
 .home {
-  padding: 35vh 0 40vh 0;
+  padding: 28vh 0 40vh 0;
   background-color: $blue;
   h1 {
     // padding-top: 30vh;
@@ -76,6 +76,26 @@ main {
     max-width: 900px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+  }
+  .home__links {
+    display: flex;
+    justify-content: center;
+    .home__links__link {
+      display: inline-block;
+      img {
+        width: 1.5rem;
+        padding: 0 0.3rem;
+        position: relative;
+        top: 1px;
+      }
+      a {
+        font-size: 1.8rem;
+        padding-right: 1rem;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
   }
 }
 
@@ -140,7 +160,19 @@ main {
     border: 1px solid darkgray;
     border-radius: 10px;
     padding: 0 1rem;
-    background-color: azure;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+      font-size: 1rem;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
   }
 }
 
@@ -166,6 +198,9 @@ main {
     max-width: 150px;
     top: 5vw;
     left: 25%;
+  }
+  .single-project__img {
+    margin-bottom: 4rem;
   }
   .project-description {
     padding: 0 10vh;
