@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import FuturePlans from './components/FuturePlans';
+import Contact from './components/Contact';
 
 const App = () => {
   const [isBg, setIsBg] = useState(true);
@@ -23,6 +24,7 @@ const App = () => {
       <AboutMe isBg={isBg} />
       {/* <div style={{ height: '1000px' }}></div> */}
       <FuturePlans isBg={isBg} />
+      <Contact isBg={isBg} />
     </Layout>
   );
 };

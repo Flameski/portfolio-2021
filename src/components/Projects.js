@@ -33,11 +33,13 @@ const Projects = ({ isBg }) => {
           <h3>{isBg ? 'Този сайт' : 'This website'}</h3>
           <div className="project-description__tag">SCSS</div>
           <div className="project-description__tag">React</div>
-          <p>
-            Този сайт е правен на React с create-react-app. Няма много сложни
-            интеракции и английската версия вероятно би могла да бъде
-            имплементирана по-добре, но като цяло се получи доста добре.
-          </p>
+          {isBg && (
+            <p>
+              Този сайт е правен на React с create-react-app. Няма много сложни
+              интеракции и английската версия вероятно би могла да бъде
+              имплементирана по-добре, но като цяло се получи доста добре.
+            </p>
+          )}
           <div className="project-description__link">
             <img src={globe} alt="GitHub" />
             <a href="/">{isBg ? 'Вече сте тук' : "You're here already"}</a>
@@ -67,11 +69,13 @@ const Projects = ({ isBg }) => {
           <div className="project-description__tag">SCSS</div>
           <div className="project-description__tag">JS</div>
           <div className="project-description__tag">Bootstrap</div>
-          <p>
-            Сайт на реална фирма, който се използва за промотиране на бизнеса и
-            набиране на клиенти. Статичен, но ползва известно количество custom
-            JS за галериите.
-          </p>
+          {isBg && (
+            <p>
+              Сайт на реална фирма, който се използва за промотиране на бизнеса
+              и набиране на клиенти. Статичен, но ползва известно количество
+              custom JS за галериите.
+            </p>
+          )}
           <div className="project-description__link">
             <img src={globe} alt="GitHub" />
             <a href="http://hranmash-bg.com/">Link</a>
@@ -99,10 +103,13 @@ const Projects = ({ isBg }) => {
           <h3>Belethor's General Goods</h3>
           <div className="project-description__tag">CSS</div>
           <div className="project-description__tag">React</div>
-          <p>
-            Малък проект just for fun. Въпреки това продуктите и количката
-            работят. Ако сте играли Skyrim ще се досетите за какво става въпрос.
-          </p>
+          {isBg && (
+            <p>
+              Малък проект just for fun. Въпреки това продуктите и количката
+              работят. Ако сте играли Skyrim ще се досетите за какво става
+              въпрос.
+            </p>
+          )}
           <div className="project-description__link">
             <img src={globe} alt="GitHub" />
             <a href="https://belethor-react.netlify.app/">Link</a>

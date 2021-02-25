@@ -43,7 +43,8 @@
   .skills,
   .projects,
   .trainings,
-  .about {
+  .about,
+  .contact {
     padding: 5vh 2vh;
   }
   .single-project {
@@ -153,5 +154,14 @@
     width: 100%;
     height: 25%;
     z-index: 99;
+  }
+  .contact {
+    .conact-info {
+      padding: 10vh 0 10vh 0;
+    }
+    .contact-email {
+      font-size: 2rem;
+      padding: 0;
+    }
   }
 }

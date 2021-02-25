@@ -6,7 +6,7 @@ export const skills = [
       'Всеки знае HTML. Въпреки това тестът в LinkedIn беше изненадващо труден.',
     descriptionEn:
       'Everyone knows HTML. Still, the LinkedIn quiz was surprisingly difficult.',
-    icon: '',
+    icon: require('../img/html.svg'),
     badge: require('../img/badge-1-html.png'),
   },
   {
@@ -16,7 +16,7 @@ export const skills = [
       'Никой не е 100% в CSS, но през годините събрах известни познания. Помня времето, когато заоблени ръбове на елементи се правеха чрез поставяне на изображения в таблица.',
     descriptionEn:
       "Noone is 100% at CSS, but I've gathered some knowledge over the years. I remember when rounded corners were done with images in tables.",
-    icon: '',
+    icon: require('../img/css.png'),
     badge: require('../img/badge-2-css.png'),
   },
   {
@@ -26,7 +26,7 @@ export const skills = [
       'Езикът, който задвижва уеб-а. Моят опит с него е главно в изграждането на интерфейсни елементи.',
     descriptionEn:
       'The language that powers the web. My experience with it is mainly in creating interface elements.',
-    icon: '',
+    icon: require('../img/js.png'),
     badge: require('../img/badge-3-js.png'),
   },
   {
@@ -36,6 +36,7 @@ export const skills = [
       'Библиотека, с която ми е приятно да работя. Все още съм далеч от познание за всичките й тънкости, но напредвам бързо.',
     descriptionEn:
       "A library I enjoy working with. I'm still far from knowing all its secrets, but I'm getting there.",
+    icon: require('../img/react.png'),
     badge: require('../img/badge-4-react.png'),
   },
   {
@@ -45,6 +46,7 @@ export const skills = [
       'Знам, че славата му отминава, но все пак е удобна и приятна за ползване технология.',
     descriptionEn:
       "I know it's past its glory days, but I still find it to be a convinient and easy to use tech.",
+    icon: require('../img/jquery.png'),
     badge: require('../img/badge-5-jquery.png'),
   },
   {
@@ -54,7 +56,8 @@ export const skills = [
       'Обичам този фреймуърк заради бързината, с която ми позволява да правя подредбата на страницата.',
     descriptionEn:
       'I love this framework for the speed it gives me when creating a page layout.',
-    icon: '',
+
+    icon: require('../img/bootstrap.png'),
   },
   {
     id: 6,
@@ -63,7 +66,7 @@ export const skills = [
       'По-добрият CSS. Заслужава си дори само заради нестинга на елементи.',
     descriptionEn:
       "The better CSS. It's worth it even only for the nesting of elements.",
-    icon: '',
+    icon: require('../img/sass.png'),
   },
   {
     id: 7,
@@ -72,6 +75,6 @@ export const skills = [
       'Език, по-прост дори от JavaScript. Странично занимание, с което се захванах, за да дигитализирам настолна игра.',
     descriptionEn:
       'A Language even simpler than JavaScript. A side project I took up in order to digitize a board game.',
-    icon: '',
+    icon: require('../img/lua.png'),
   },
 ];

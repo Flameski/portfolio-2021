@@ -156,7 +156,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  div {
+  article {
     border: 1px solid darkgray;
     border-radius: 10px;
     padding: 0 1rem;
@@ -167,11 +167,21 @@ main {
     p {
       font-size: 1rem;
     }
+    h3 {
+      display: inline-block;
+    }
     img {
       max-width: 100%;
       height: auto;
       display: block;
       margin: auto;
+    }
+    .skill-icon {
+      display: inline-block;
+      width: 25px;
+      position: relative;
+      top: 5px;
+      padding-right: 5px;
     }
   }
 }
@@ -359,4 +369,30 @@ main {
     margin: 1rem 3rem;
     padding: 2rem;
   }
+}
+
+.contact {
+  padding: 5vh 10vh;
+  h2 {
+    @include section-header();
+  }
+  background-color: $lightblue;
+  text-align: center;
+  .contact-info {
+    padding: 20vh 0 28vh 0;
+  }
+  .contact-email {
+    font-size: 3rem;
+    padding: 2rem;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      font-family: inherit;
+      color: $darkblue;
+    }
+  }
+}
+
+footer {
+  text-align: center;
 }

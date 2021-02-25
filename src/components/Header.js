@@ -54,11 +54,11 @@ const Header = ({ changeLang, isBg }) => {
           </HashLink>
           <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#trainings" onClick={() => openMenu()}>
-            {isBg ? 'Бъдещи обучения' : 'Training'}
+            {isBg ? 'Какво уча в момента' : "What I'm learning now"}
           </HashLink>
           <span className="main-nav__pipe">|</span>
           <HashLink smooth to="/#contact" onClick={() => openMenu()}>
-            {isBg ? 'Контакти' : 'Conatcts'}
+            {isBg ? 'Контакти' : 'Contacts'}
           </HashLink>
         </nav>
         <Language changeLang={changeLang} isBg={isBg} />
