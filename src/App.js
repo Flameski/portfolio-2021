@@ -11,7 +11,7 @@ import FuturePlans from './components/FuturePlans';
 import Contact from './components/Contact';
 
 const App = () => {
-  const [isBg, setIsBg] = useState(true);
+  const [isBg, setIsBg] = useState(false);
   const changeLang = () => {
     setIsBg(!isBg);
   };
