@@ -85,7 +85,7 @@ const CV = ({ isBg }) => {
         </p>
         <div className="employment">
           <h4>IKEA</h4>
-          <h5>2018 - currently</h5>
+          <h5>2018 - 2021</h5>
           <h6>Web marketing specialist</h6>
           <ul>
             <li>managing content on ikea.bg</li>
