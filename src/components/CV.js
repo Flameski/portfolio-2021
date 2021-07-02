@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const CV = ({ isBg }) => {
   if (isBg) {
@@ -19,7 +19,7 @@ const CV = ({ isBg }) => {
         </p>
         <div className="employment">
           <h4>IKEA</h4>
-          <h5>2018 - до настоящия момент</h5>
+          <h5>2018 - 2021</h5>
           <h6>Специалист уеб маркетинг</h6>
           <ul>
             <li>управление на съдържанието на ikea.bg</li>
