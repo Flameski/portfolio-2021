@@ -6,17 +6,26 @@ const CV = ({ isBg }) => {
       <section className="experience" id="cv">
         <h2>Моят професионален опит</h2>
         <p>
-          От почти десет години се занимавам с управление на съдържание по
-          сайтовете на различни компании. Формално досега винаги съм бил част от
-          маркетинг екипа, а не от IT/Dev отдела, но моята страст винаги е била
-          насочена към създаването на ясни за разбиране и лесни за навигиране
-          сайтове и лендинг страници.
+          От повече от година съм част професионален софтуерен разработчик.
+          Участвал съм в няколко проекта за банкови приложения за клиенти извън
+          България.
         </p>
         <p>
-          В професионална среда работя с вече изградени CMS-и, но винаги се
-          старая да добавя личен отпечатък към зададените шаблони и да тествам
-          границите на възможното със собствени дизайни и доработки.
+          Над десет години се занимавах с управление на съдържание по сайтовете
+          на различни компании. В миналото бях част от маркетинг екипа, но моята
+          страст винаги е била насочена към създаването на ясни за разбиране и
+          лесни за навигиране сайтове и лендинг страници.
         </p>
+        <div className="employment">
+          <h4>SoftServe</h4>
+          <h5>2021 - до сега</h5>
+          <h6>Младши разработчик софтуер</h6>
+          <ul>
+            <li>Front-end разработка с vanilla JavaScript</li>
+            <li>Опит с low-code системи (Temenos Quantum / Volt MX)</li>
+            <li>Web и mobile front-end с Temenos/Volt/Flutter</li>
+          </ul>
+        </div>
         <div className="employment">
           <h4>IKEA</h4>
           <h5>2018 - 2021</h5>
@@ -72,17 +81,28 @@ const CV = ({ isBg }) => {
       <section className="experience" id="cv">
         <h2>My professional experience</h2>
         <p>
-          For nearly ten years now I've been managing content on different
-          corporate websites. Technically I've always been a part of the
-          Marketing team and not the IT/Dev department, but my passion has
-          always been creating clear to understand and easy to navigate sites
-          and landing pages.
+          I've been a professional software developer for over a year. I've
+          participated in several projects for banking apps for clients outside
+          of Bulgaria.
         </p>
         <p>
-          Professionally I've been working with CMS's, but I always try to add a
-          personal touch to the existing templates and testing the limits of
-          what's possible with designs and additions of my own.
+          I've managed content on different corporate websites for over ten
+          years. In the past I've been a part of the Marketing team, but my
+          passion has always been creating clear to understand and easy to
+          navigate sites and landing pages.
         </p>
+        <div className="employment">
+          <h4>SoftServe</h4>
+          <h5>2021 - now</h5>
+          <h6>Junior software developer</h6>
+          <ul>
+            <li>Front-end development with vanilla JavaScript</li>
+            <li>
+              Experience with low-code frameworks (Temenos Quantum / Volt MX)
+            </li>
+            <li>Web and mobile front-end with Temenos/Volt/Flutter</li>
+          </ul>
+        </div>
         <div className="employment">
           <h4>IKEA</h4>
           <h5>2018 - 2021</h5>

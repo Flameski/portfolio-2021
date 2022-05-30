@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Tidbit = ({ id, title, img, bgstyle, showTidbitDescription }) => {
   return (
@@ -8,7 +8,7 @@ const Tidbit = ({ id, title, img, bgstyle, showTidbitDescription }) => {
       onMouseOver={() => showTidbitDescription(id)}
       onMouseDown={() => showTidbitDescription(id)}
     >
-      <img src={img.default} alt={title} />
+      <img src={img} alt={title} />
       <p>{title}</p>
     </div>
   );

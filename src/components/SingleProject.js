@@ -1,6 +1,6 @@
-import React from 'react';
-import github from '../img/github.png';
-import globe from '../img/globe.png';
+import React from "react";
+import github from "../img/github.png";
+import globe from "../img/globe.png";
 
 const SingleProject = ({
   isBg,
@@ -19,29 +19,29 @@ const SingleProject = ({
       <div className="single-project__img">
         <img
           className="desktop"
-          src={desktopPic.default}
+          src={desktopPic}
           alt={`${titleEn} desktop view`}
         />
         <img
           className="mobile"
-          src={mobilePic.default}
+          src={mobilePic}
           alt={`${titleEn} mobile view`}
         />
       </div>
       <div className="project-description">
         <h3>{isBg ? title : titleEn}</h3>
-        {techs.map(tech => {
+        {techs.map((tech) => {
           return <div className="project-description__tag">{tech}</div>;
         })}
         <p>{isBg ? description : descriptionEn}</p>
         <div className="project-description__link">
           <img src={globe} alt="GitHub" />
           <a href={url}>
-            {titleEn === 'This website'
+            {titleEn === "This website"
               ? isBg
-                ? 'Вече сте тук'
+                ? "Вече сте тук"
                 : "You're here already"
-              : 'Link'}
+              : "Link"}
           </a>
         </div>
         <div className="project-description__link">

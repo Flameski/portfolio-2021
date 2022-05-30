@@ -9,10 +9,8 @@ const Home = ({ isBg }) => {
         <h1>Здравейте</h1>
         <p>
           Аз съм <strong>Пламен</strong> и се занимавам с уеб вече има-няма
-          десет години. Досега работех с готови системи и CMS-и, но искам да
-          премина на следващото ниво - да започна като Web Dev. В момента търся
-          нова професионална реализация, свързана с разработката и поддръжката
-          на уеб проекти, която да ми позволи да навляза в индустрията. Ако
+          десет години. След като доста време работех с готови системи и CMS-и, в началото на 2021-ва година успях да
+          премина на следващото ниво - стартирах като професионален Web Dev. Ако
           искате да направим нещо заедно,&nbsp;
           <a href="mailto:plamen.d@protonmail.com">свържете се с мен!</a>
         </p>
@@ -36,11 +34,9 @@ const Home = ({ isBg }) => {
         <h1>Hello</h1>
         <p>
           My name is <strong>Plamen</strong> and I've been working on web
-          projects for about ten years. So far I've been working with premade
-          systems and CMS's, but now I want to go to the next level - to begin
-          my journey as a Web Dev. I'm currently looking for new professional
-          opportunities related to the development and support of web projects,
-          which would allow me to step into the industry. If you want us to
+          projects for about ten years. After working with premade
+          systems and CMS's for quite a while, in the beginning of 2021 I made the first step to the next level - I began
+          my journey as a professional Web Dev. If you want us to
           create something together,&nbsp;
           <a href="mailto:plamen.d@protonmail.com">contact me!</a>
         </p>
