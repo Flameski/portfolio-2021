@@ -1,6 +1,6 @@
-import React from "react";
-import github from "../img/github.png";
-import globe from "../img/globe.png";
+import React from 'react';
+import github from '../img/github.png';
+import globe from '../img/globe.png';
 
 const SingleProject = ({
   isBg,
@@ -15,38 +15,42 @@ const SingleProject = ({
   githubUrl,
 }) => {
   return (
-    <div className="single-project">
-      <div className="single-project__img">
+    <div className='single-project'>
+      <div className='single-project__img'>
         <img
-          className="desktop"
+          className='desktop'
           src={desktopPic}
           alt={`${titleEn} desktop view`}
         />
         <img
-          className="mobile"
+          className='mobile'
           src={mobilePic}
           alt={`${titleEn} mobile view`}
         />
       </div>
-      <div className="project-description">
+      <div className='project-description'>
         <h3>{isBg ? title : titleEn}</h3>
-        {techs.map((tech) => {
-          return <div className="project-description__tag">{tech}</div>;
+        {techs.map((tech, index) => {
+          return (
+            <div key={index} className='project-description__tag'>
+              {tech}
+            </div>
+          );
         })}
         <p>{isBg ? description : descriptionEn}</p>
-        <div className="project-description__link">
-          <img src={globe} alt="GitHub" />
+        <div className='project-description__link'>
+          <img src={globe} alt='GitHub' />
           <a href={url}>
-            {titleEn === "This website"
+            {titleEn === 'This website'
               ? isBg
-                ? "Вече сте тук"
+                ? 'Вече сте тук'
                 : "You're here already"
-              : "Link"}
+              : 'Link'}
           </a>
         </div>
-        <div className="project-description__link">
-          <img src={github} alt="GitHub" />
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <div className='project-description__link'>
+          <img src={github} alt='GitHub' />
+          <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
             GitHub
           </a>
         </div>
