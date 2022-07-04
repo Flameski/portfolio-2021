@@ -22,11 +22,14 @@ const SingleProject = ({
           src={desktopPic}
           alt={`${titleEn} desktop view`}
         />
-        <img
-          className='mobile'
-          src={mobilePic}
-          alt={`${titleEn} mobile view`}
-        />
+
+        {mobilePic ? (
+          <img
+            className='mobile'
+            src={mobilePic}
+            alt={`${titleEn} mobile view`}
+          />
+        ) : null}
       </div>
       <div className='project-description'>
         <h3>{isBg ? title : titleEn}</h3>

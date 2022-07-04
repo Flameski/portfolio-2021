@@ -194,6 +194,22 @@ main {
   }
 }
 
+.projects-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  #active {
+    color: white;
+    background-color: #007eff;
+    padding: 1rem;
+  }
+  #inactive {
+    color: #007eff;
+    padding: 1rem;
+    text-decoration: underline;
+  }
+}
+
 .single-project {
   position: relative;
   min-height: 45vh;

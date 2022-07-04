@@ -12,6 +12,7 @@ export const projects = [
     mobilePic: require('../img/portfolio-mobile.png'),
     url: '/',
     githubUrl: 'https://github.com/Flameski/portfolio-2021',
+    type: 'wr',
   },
   {
     id: 1,
@@ -26,10 +27,11 @@ export const projects = [
     mobilePic: require('../img/hranmash-mobile.png'),
     url: 'http://hranmash-bg.com/',
     githubUrl: 'https://github.com/Flameski/hranmash',
+    type: 'wr',
   },
   {
     id: 2,
-    title: "Beletho's General Goods",
+    title: "Belethor's General Goods",
     titleEn: "Belethor's General Goods",
     techs: ['CSS', 'React'],
     description:
@@ -40,6 +42,7 @@ export const projects = [
     mobilePic: require('../img/belethor-mobile.png'),
     url: 'https://belethor-react.netlify.app/',
     githubUrl: 'https://github.com/Flameski/belethor-react',
+    type: 'ex',
   },
   {
     id: 3,
@@ -54,5 +57,21 @@ export const projects = [
     mobilePic: require('../img/none.png'),
     url: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2159153550',
     githubUrl: '/',
+    type: 'as',
+  },
+  {
+    id: 4,
+    title: 'Games Center',
+    titleEn: 'Games Center',
+    techs: ['CSS', 'React'],
+    description:
+      'Сайт тип гейм-енциклопедия, използващ API от GoG.com. Целта му е да покаже използване на външно API.',
+    descriptionEn:
+      'A gaming-encyclopedia type of site, using an API from GoG.com. Meant to show external API usage.',
+    desktopPic: require('../img/games-center.png'),
+    mobilePic: '',
+    url: 'https://gaming-website-flameski.netlify.app/',
+    githubUrl: 'https://github.com/Flameski/gaming-website',
+    type: 'ex',
   },
 ];
